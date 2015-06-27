@@ -1,0 +1,374 @@
+%!TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[print]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage{ctex}
+
+
+
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{张}{发幼}{机器学习相关职位} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{联系方式}
+曹安公路 4800,
+嘉定区, 上海
+201804
+~
++86 189 1827 8022
+~
+\href{mailto:zhangfayou@gmail.com}{zhangfayou@gmail.com}
+%\href{http://www.smith.com}{http://www.smith.com}
+\href{http://fayolchang.github.io/hexoblog}{github}
+% \section{languages}
+% english mother tongue
+% spanish \& italian fluency
+\section{编程语言}
+{\color{red} $\varheartsuit$} R
+Python, Matlab Mathematica
+% \section{standardized tests}
+% \textbf{TOEFL:} 94  \textbf{GRE:} Verbal 153 Math 162 AW 3
+% \section{interests}
+% \textbf{professional:}
+% data analysis
+% programming
+% \textbf{personal:}
+% bridge, running
+% \section{courses}
+% {2012-2014}
+% {computer science related}
+% {TongJi University}
+% {Modern Optimization In Management Science
+% Numerical Optimization
+% Convex Optimization
+% Management Information System
+% Multivariate Statistics}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育背景}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2012-2015}
+{ {\normalfont 管理科学与工程}硕士}
+{同济大学}
+{GPA:86.7/100\\
+\emph{基于 DEA 与随机森林的上市公司财务困境预测} \\
+本论文通过引入 DEA 效率作为一个预测变量,运用递归特征选择方法选择对预测影响最大的特征,然后使用支持向量机、朴素贝叶斯、神经网络、随机森林等机器学习方法,来预测上市公司2年后是否会被特别处理。研究显示 DEA 效率对预测结果有显著影响,本文预测精度比通常研究提高5-10个百分点.}
+%------------------------------------------------
+\entry
+{2003-2007}
+{{\normalfont 材料科学与工程}学士}
+{哈尔滨工业大学}
+{负责数据处理\\
+参与水泥混凝土抗冻融耐久性能研究}
+%------------------------------------------------
+\end{entrylist}
+
+
+
+
+%%-------------------------------------------------------------------------------
+%  skills section
+%%------------------------------------------------------------------------------
+\section{所学技能}
+\begin{entrylist}
+
+\entry
+{}
+{熟练}
+{}
+{\emph{算法}\\
+基本数据结构与算法：\\
+quick sort,Binary Search Tree,Dijkstra,Floyd等\\
+机器学习相关算法:\\
+线搜索, 梯度下降, 共轭梯度, 拟牛顿法, 模拟退火,  K近邻,支持向量机，boosting,bagging等
+\emph{软件}\\%
+ Microsoft Office,latex,git, sed \& awk}
+
+
+
+\entry
+{}
+{熟悉}
+{}
+{\emph{算法}\\
+BFGS, 遗传算法, 禁忌搜索, 随机森林, 神经网络等\\ %
+\emph{软件 \& 操作系统}\\
+SQL, linux, Mac OS X,基础 bash 命令
+}
+
+\end{entrylist}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{经历经验}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014}
+{华为杯全国研究生数学建模竞赛}
+{同济大学}
+{二等奖 \\
+负责模型构建和编程实现 \\
+模型考虑了使用不同轿运车的成本、装卸成本、里程成本、多个运输目的地;
+构建了整数规划模型，使得总费用最小\\
+编程使用启发式算法和分支界定法解决这个整数规划模型
+}
+%-----------------------------------------------------
+
+% \entry
+% {2012-2014}
+% {Research Assistant, \normalfont{Supply Chain \& Industrial Engineering Lab}}
+% {TongJi University}
+% {Data cleaning, Data filtering and Data transformation for machine learning algorithms\\
+%  Investigated feature selection via Random Forest and Rough set\\
+%  Designed a new feature for better prediction accuracy\\
+%  Studied various machine learning algorithms for better prediction\\
+%  Applied machine learning algorithms to predict business failure
+% }
+
+%-----------------------------------------------------
+
+
+\entry
+{2007-2011}
+{江苏博特新材料有限公司}
+{江苏南京}
+{浙江省销售与技术服务\\
+参与沪杭高铁项目
+负责杭长高速公路项目}
+
+%-----------------------------------------------------
+
+% \entry
+% {2007}
+% {Building Materials Lab}
+% {Harbin Institute of Technology}
+% {\emph{Freeze-Thaw Resistance and Durability of Cement Concrete}\\
+% Developed strong skills in C\# and SQL\\
+% }
+
+%\emph{1\textsuperscript{st} Year Analyst} \\
+% Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
+% Detailed achievements:
+% \begin{itemize}
+% \item Learned how to make amazing coffee
+% \item Finally determined the reason for \textsc{PC LOAD LETTER}:
+% 	\begin{itemize}
+% 		\item Paper jam
+% 		\item Software issues:
+% 		\begin{itemize}
+% 			\item Word not sending the correct data to printer
+% 			\item Windows trying to print in letter format
+% 		\end{itemize}
+% 		\item Coffee spilled inside printer
+% 	\end{itemize}
+% \item Broke the office record for number of kitten pictures in cubicle
+% \end{itemize}
+
+%------------------------------------------------
+% \entry
+% {2010--2011}
+% {LEHMAN BROTHERS}
+% {London, United Kingdom}
+% {\emph{Summer Intern} \\
+% Rated "truly distinctive" for Analytical Skills and Teamwork.}
+%------------------------------------------------
+% \entry
+% {2008-2009}
+% {Buy More}
+% {Burbank, California}
+% {\emph{Computer Repair Specialist} \\
+% Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+%------------------------------------------------
+\end{entrylist}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{所获证书}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014}
+{数据科学}
+{约翰霍普金斯大学 on Coursera}
+{数据科学家工具箱\\
+ R语言编程\\
+数据获取与清理\\
+探索性数据分析\\
+可重复性研究\\
+统计推断\\
+回归模型\\
+机器学习实战\\
+数据产品开发}
+%{Presented the research I conducted for my Masters of Commerce degree.}
+%------------------------------------------------
+% \entry
+% {2010}
+% {Poster}
+% {Annual Business Conference, Oregon}
+% {As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+%------------------------------------------------
+\end{entrylist}
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\section{所学课程}
+\begin{entrylist}
+\entry
+{2012-2014}
+{}
+{同济大学}
+{管理优化方法,
+数值最优化,
+凸优化, 
+管理信息系统,
+高级运筹学,
+高级应用统计学,
+计量经济学,
+高级管理学,
+物流与供应链管理
+}
+\end{entrylist}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
+% \section{所获奖项}
+% \begin{entrylist}
+% %------------------------------------------------
+% \entry
+% {2012-2014}
+% {研究生奖学金}
+% {同济大学,经济与管理学院}
+% {}
+% %------------------------------------------------
+% \end{entrylist}
+
+
+\section{语言成绩}
+% \begin{entrylist}
+% \entry
+% {}
+% {}
+% {}
+{\textbf{TOEFL:} 96  \textbf{GRE:} Verbal 153 Math 162 AW 3 六级：通过}
+% \end{entrylist}
+
+
+
+\section{兴趣爱好}
+% \begin{entrylist}
+% \entry
+% {}
+% {}
+% {}
+{\textbf{professional:} 编程,数据分析
+ \textbf{personal:} 游泳,跑步}
+% \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{发表论文}
+
+%\begin{enumerate}
+
+[1]马卫民,李彬,徐博,张发幼. 考虑节点中断和需求波动的可靠供应链网络设计问题[J]. 系统工程理论与实践,,:1.
+
+[2]段永瑞,张发幼. 基于随机森林和 modified-SBM 的上市公司财务危机预警[J].经营管理者,(5)2015 
+
+%\end{enumerate}
+% \printbibsection{article}{} % Print all articles from the bibliography
+%
+% \printbibsection{book}{books} % Print all books from the bibliography
+%
+% \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+% \nocite{*}
+% \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+% \end{refsection}
+%
+% \begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+% \nocite{*}
+% \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+% \end{refsection}
+%
+% \printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+% \printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+\end{document}
